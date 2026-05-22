@@ -6,15 +6,13 @@ function setup() {
   textFont("monospace");
   textSize(20);
 
-  // columnas Matrix
   for (let x = 0; x < width; x += 20) {
     streams.push(new Stream(x));
   }
 }
 
 function draw() {
-  background(0, 150); // negro con transparencia
-
+  background(0, 150);
   for (let s of streams) {
     s.update();
     s.render();
