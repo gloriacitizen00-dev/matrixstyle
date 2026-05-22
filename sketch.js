@@ -6,14 +6,13 @@ function setup() {
   textFont("monospace");
   textSize(20);
 
-  // columnas Matrix
   for (let x = 0; x < width; x += 20) {
     streams.push(new Stream(x));
   }
 }
 
 function draw() {
-  background(0, 150); // negro con transparencia
+  background(0, 150);
 
   for (let s of streams) {
     s.update();
@@ -24,7 +23,7 @@ function draw() {
 class Stream {
   constructor(x) {
     this.x = x;
-    this.y = random(-1000, 0); // nacen arriba, fuera de pantalla
+    this.y = random(-1000, 0); // nacen arriba
     this.speed = random(4, 10);
     this.length = int(random(5, 20));
   }
