@@ -1,0 +1,40 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  background-color: #000;
+  color: #ccc;
+  font-family: 'Helvetica', sans-serif;
+}
+
+canvas {
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: block;
+  margin: 0;
+  z-index: -1; /* detrás del contenido */
+}
+
+#nav-buttons {
+  text-align: center;
+  margin: 20px;
+}
+
+#nav-buttons button {
+  background-color: #00ff00;
+  color: #000;
+  border: none;
+  padding: 10px 20px;
+  margin: 10px;
+  font-size: 1em;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: 0.3s;
+}
+
+#nav-buttons button:hover {
+  background-color: #009900;
+  color: #fff;
+}
